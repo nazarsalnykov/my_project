@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form id="my_form" onsubmit="alert(decodeURI(new URLSearchParams(Array.from(new FormData(document.getElementById('my_form')))).toString()));return false;">
+        <label for="name">Повне ім'я</label>
+        <input id="name" type="text">
+        <br> <br>
+        <label for="email">Email</label>
+        <input id="email" type="email">
+        <br> <br>
+        <label for="password">Пароль</label>
+        <input id="password" type="password">
+        <br> <br>
+        <label for="password_again">Пароль ще раз</label>
+        <input id="password_again" type="password">
+        <br> <br>
+        
+        <span>Стать</span>
+        <label><input type="radio" name="gender" value="male" checked>чоловіча</label>
+        <label><input type="radio" name="gender" value="female" checked>жіноча</label>
+        <br> <br>
+
+        <label for="age">Вік</label>
+        <input id="age" type="number" name="age" min="1" max="120">
+        <br> <br>
+        <label for="course">Курс</label>
+        <select name="course" id="course" required>
+        <option value="">-=Виберіть курс=-</option>
+        <option value="Front-End">Front-End</option>
+        <option value="Back-End">Back-End</option>
+        <option value="Project Management">Project Management</option>
+        <option value="QA Manual">QA Manual</option>
+        </select>
+        <br> <br>
+        <label for="address">Повна адреса</label>
+        <textarea id="address" name="address" rows="4" cols="20" placeholder="Країна, регіон, місто/селище, вулиця"></textarea>
+        <br> <br>
+        <label>
+            <input type="checkbox" name="agreement" required>
+            Я погоджуюсь з обробкою персональних даних
+        </label>
+        <br> <br>
+        <button type="reset">Очистити форму</button>
+        <button type="submit">Зареєструватися</button>
+    </form>
+
+</body>
+</html>
