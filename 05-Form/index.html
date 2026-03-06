@@ -8,16 +8,16 @@
 <body>
     <form id="my_form" onsubmit="alert(decodeURI(new URLSearchParams(Array.from(new FormData(document.getElementById('my_form')))).toString()));return false;">
         <label for="name">Повне ім'я</label>
-        <input id="name" type="text">
+        <input id="name" name="name" type="text">
         <br> <br>
         <label for="email">Email</label>
-        <input id="email" type="email">
+        <input id="email" name="email" type="email">
         <br> <br>
         <label for="password">Пароль</label>
-        <input id="password" type="password">
+        <input id="password" name="password" type="password">
         <br> <br>
         <label for="password_again">Пароль ще раз</label>
-        <input id="password_again" type="password">
+        <input id="password_again" name="password" type="password">
         <br> <br>
         
         <span>Стать</span>
@@ -30,7 +30,7 @@
         <br> <br>
         <label for="course">Курс</label>
         <select name="course" id="course" required>
-        <option value="">-=Виберіть курс=-</option>
+        <option value="" disabled selected hidden>-=Виберіть курс=-</option>
         <option value="Front-End">Front-End</option>
         <option value="Back-End">Back-End</option>
         <option value="Project Management">Project Management</option>
