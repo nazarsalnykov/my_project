@@ -1,0 +1,129 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #3b3f45;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    width: 800px;
+    margin: 40px auto;
+}
+
+header {
+    width: 1200px;
+    height: 122px;
+    margin: 0 auto;
+    background: #4a4f56;
+    text-align: center;
+    color: #FF8984;
+    padding-top: 25px;
+}
+
+header h1 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+}
+
+header p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    color: white;
+    background: #88839e;
+    padding: 15px 20px;
+    font-size: 27px;
+    line-height: 32px;
+    font-weight: 400;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+}
+
+small {
+    color: #d6d6d6;
+    font-size: 0.7em;
+    line-height: 22px;
+    font-weight: 400;
+    vertical-align: 3px;
+}
+
+label {
+    display: block;
+    cursor: pointer;
+}
+
+li:nth-child(even) {
+    background: #7a7593;
+}
+
+li:hover {
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+li:active {
+    background: #eb7e7f;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+input[type="checkbox"] {
+    margin-right: 15px;
+    width: 20px;
+    height: 20px;
+}
+
+input:checked + span {
+    position: relative;
+    color: #9B96AC;
+    text-decoration: none;
+}
+
+input:checked + span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;       
+    height: 2px;
+    background: #9B96AC;
+}
+
+li::before {
+    content: "";
+    display: none;
+}
+
+.bon-appetit {
+    width: 800px;
+    height: 65px;
+    margin: 20px auto;
+    display: block;
+    background: #4a4f56;
+    color: #FF8984;
+    font-size: 28px;
+    line-height: 65px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+
+.bon-appetit:hover {
+    background: #eb7e7f;
+    color: #4a4f56;
+}
