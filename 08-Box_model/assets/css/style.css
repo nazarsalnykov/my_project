@@ -7,7 +7,7 @@ transition: all .1s ease-in;
 
 body{
 background:#2f88b7;
-font-family:Arial, sans-serif;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 padding:40px;
 }
 
@@ -21,40 +21,54 @@ color:white;
 margin-bottom:20px;
 text-align: left;
 font-weight: normal;
+font-size:21px;
 }
 
 .weather{
 list-style:none;
-border:2px solid white;
+border:2px solid #FFFFFF;
 font-size:0;
+background-color:#FFFFFF;
 }
 
 .weather li{
 display:inline-block;
-color:white;
-font-size:18px;
-padding:30px 0;
-border:1px solid rgba(255,255,255,0.5);
+color:#FFFFFF;
+font-size: 22px;
+height:147px;
+padding: 25px 20px;
+border:2px solid #FFFFFF;
 vertical-align:top;
 opacity: 1;
-transition: opacity 0.3s;
-text-align: center;
+text-align:center;
+line-height:2;
 }
 
-.lisbon{width:50%; background:#69a6c4;}
-.paris{width:25%; background:#63c0bd;}
-.belgrade{width:25%; background:#a88aa8;}
-.venice{width:25%; background:#c94a46;}
-.telaviv{width:25%; background:#e08a74;}
-.cair{width:25%; background:#e7c781;}
-.newyork{width:25%; background:#9fc3a3;}
-.delhi{width:25%; background:#8eaeb1;}
-.sanfran{width:50%; background:#c4839f;}
-.tokyo{width:25%; background:#6fb090;}
-.sydney{width:100%; background:#8f90b3;}
+.lisbon{width:50%; background:#3399cc;}
+.paris{width:25%; background:#33cccc;}
+.belgrade{width:25%; background:#996699;}
+.venice{width:25%; background:#c24747;}
+.telaviv{width:25%; background:#e2674a;}
+.cair{width:25%; background:#ffcc66;}
+.newyork{width:25%; background:#99cc99;}
+.delhi{width:25%; background:#669999;}
+.sanfran{width:50%; background:#cc6699;}
+.tokyo{width:25%; background:#339966;}
+.sydney{width:100%; background:#666699;}
+
+.weather .wi{
+font-size:42px;
+margin-left:5px;
+vertical-align: -8px;
+}
+
+h1 .wi{
+font-size:27px;
+margin-left: 8px;
+}
 
 .weather:hover li {
-    opacity: 0.5;
+    opacity: 0.7;
 }
 .weather li:hover {
     opacity:1;
@@ -62,7 +76,7 @@ text-align: center;
 
 .footer {
 margin-top: 30px;
-color:white;
-font-size:14px;
+color:#FFFFFF;
+font-size:16px;
 text-align: left;
 }
