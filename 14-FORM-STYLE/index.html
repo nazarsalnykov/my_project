@@ -9,51 +9,53 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="form-wrapper">
-            <section class="form-card">
-                <h2>Create an Account</h2>
+    <section>
+        <div class="container">
+            <div class="form-wrapper">
                 <form action="#" method="post">
                     <div class="form-inner">
-                        <div class="form-row">
-                            <label for="firstname">First Name</label>
-                            <input type="text" id="firstname" name="firstname" required>
-                        </div>
-                        <div class="form-row">
-                            <label for="lastname">Last Name</label>
-                            <input type="text" name="lastname" id="lastname" required>
-                        </div>
-                        <div class="form-row">
-                            <label for="email">E-mail</label>
-                            <input type="email" name="email" id="email">
-                            <p>We'll never share your email with anyone else.</p>
-                        </div>
-                        <div class="form-row">
-                            <ul>
-                                <li>
-                                    <label><input type="radio" name="gender" value="Male" checked>Male</label>
-                                </li>
-                                <li>
-                                    <label><input type="radio" name="gender" value="Female">Female</label>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="form-row">
-                            <label for="country">Country</label>
-                            <select name="country" id="country">
-                                <option value="" disabled selected hidden>Select</option>
-                                <option value="Ukraine">Ukraine</option>
-                                <option value="USA">USA</option>
-                                <option value="France">France</option>
-                            </select>
-                        </div>
-                        <div class="form-row">
-                            <label for="city">City</label>
-                            <input type="text" name="city" id="city">
-                        </div>
+                        <h2>Create an Account</h2>
+                        <div class="form-cols">
+                            <div class="form-row">
+                                <label for="firstname">First Name</label>
+                                <input type="text" id="firstname" name="firstname" required>
+                            </div>
+                            <div class="form-row">
+                                <label for="lastname">Last Name</label>
+                                <input type="text" name="lastname" id="lastname" required>
+                            </div>
+                            <div class="form-row full">
+                                <label for="email">E-mail</label>
+                                <input type="email" name="email" id="email">
+                                <p>We'll never share your email with anyone else.</p>
+                            </div>
+                            <div class="form-row full">
+                                <ul>
+                                    <li>
+                                        <label><input type="radio" name="gender" value="Male" checked>Male</label>
+                                    </li>
+                                    <li>
+                                        <label><input type="radio" name="gender" value="Female">Female</label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="form-row">
+                                <label for="country">Country</label>
+                                <select name="country" id="country">
+                                    <option value="" disabled selected hidden>Select</option>
+                                    <option value="Ukraine">Ukraine</option>
+                                    <option value="USA">USA</option>
+                                    <option value="France">France</option>
+                                </select>
+                            </div>
+                            <div class="form-row">
+                                <label for="city">City</label>
+                                <input type="text" name="city" id="city">
+                            </div>
 
-                        <div class="form-btn">
-                            <button type="submit">Sign UP</button>
+                            <div class="form-btn">
+                                <button type="submit">Sign UP</button>
+                            </div>
                         </div>
                     </div>
                     <p class="terms"> By clicking the 'Sign Up' button, you confirm that you accept our
@@ -64,55 +66,98 @@
                         Have an account? <a href="#">Log In</a>
                     </p>
                 </form>
-            </section>
+            </div>
+        </div>
 
-            <section class="form-card">
-                <h2>Profile</h2>
+
+        <div class="container">
+            <div class="form-wrapper">
                 <form action="#" method="post">
-                    <div class="profile-top">
-                        <img src="#" alt="avatar" class="avatar">
-                        <div class="upload">
-                            <input type="file">
-                            <p>Up to 1 MB (300x300 px)</p>
+                    <div class="form-inner">
+                        <h2>Profile</h2>
+                        <div class="profile-top">
+
+                            <img src="./Images/📷Image.png" alt="avatar" class="avatar">
+
+                            
+                            <div class="upload-block">
+
+                                <div class="upload-wrapper">
+
+                                    
+                                    <label class="upload-field">
+                                        <input type="file">
+
+                                        <span class="upload-icon">
+                                          
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M4.78001 3.33333L6.00001 2H10L11.22 3.33333H13.3333C14.0667 3.33333 14.6667 3.93333 14.6667 4.66667V12.6667C14.6667 13.4 14.0667 14 13.3333 14H2.66668C1.93334 14 1.33334 13.4 1.33334 12.6667V4.66667C1.33334 3.93333 1.93334 3.33333 2.66668 3.33333H4.78001ZM4.66668 8.66667C4.66668 10.5067 6.16001 12 8.00001 12C9.84001 12 11.3333 10.5067 11.3333 8.66667C11.3333 6.82667 9.84001 5.33333 8.00001 5.33333C6.16001 5.33333 4.66668 6.82667 4.66668 8.66667ZM8.00001 10.8C9.17822 10.8 10.1333 9.84487 10.1333 8.66667C10.1333 7.48846 9.17822 6.53333 8.00001 6.53333C6.8218 6.53333 5.86668 7.48846 5.86668 8.66667C5.86668 9.84487 6.8218 10.8 8.00001 10.8Z"
+                                                    fill="#969696" />
+                                            </svg>
+
+                                        </span>
+
+                                    </label>
+
+                                    
+                                    <button type="button" class="upload-delete">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M4.00001 12.6667C4.00001 13.4 4.60001 14 5.33334 14H10.6667C11.4 14 12 13.4 12 12.6667V4.66667H4.00001V12.6667V12.6667ZM12.6667 2.66667H10.3333L9.66668 2H6.33334L5.66668 2.66667H3.33334V4H12.6667V2.66667V2.66667Z"
+                                                fill="#969696" />
+                                        </svg>
+
+                                    </button>
+
+                                </div>
+
+                                <p class="upload-hint">Up to 1 MB (300x300 px)</p>
+
+                            </div>
+
                         </div>
                     </div>
-                    <div class="form-row">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-row">
-                        <label for="email-profile">E-mail</label>
-                        <input type="email" name="email-profile" id="email-profile">
-                    </div>
-                    <div class="form-row">
-                        <label for="country-profile">Country</label>
-                        <select name="country-profile" id="country-profile">
-                            <option value="" disabled selected hidden>Select</option>
-                            <option value="Ukraine">Ukraine</option>
-                            <option value="USA">USA</option>
-                            <option value="France">France</option>
-                        </select>
-                    </div>
-                    <div class="form-row">
-                        <label for="city-profile">City</label>
-                        <input type="text" name="city" id="city-profile">
-                    </div>
-                    <div class="form-row">
-                        <label for="zipcode">Zip Code</label>
-                        <input type="text" name="zipcode" id="zipcode">
-                    </div>
-                    <div class="form-row">
-                        <label for="phonenumber">Phone Number</label>
-                        <input type="text" name="phonenumber" id="phonenumber">
-                    </div>
-                    <div class="form-btn">
-                        <button type="submit">Update</button>
+                    <div class="form-cols">
+                        <div class="form-row">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-row">
+                            <label for="email-profile">E-mail</label>
+                            <input type="email" name="email-profile" id="email-profile">
+                        </div>
+                        <div class="form-row">
+                            <label for="country-profile">Country</label>
+                            <select name="country-profile" id="country-profile">
+                                <option value="" disabled selected hidden>Select</option>
+                                <option value="Ukraine">Ukraine</option>
+                                <option value="USA">USA</option>
+                                <option value="France">France</option>
+                            </select>
+                        </div>
+                        <div class="form-row">
+                            <label for="city-profile">City</label>
+                            <input type="text" name="city" id="city-profile">
+                        </div>
+                        <div class="form-row">
+                            <label for="zipcode">Zip Code</label>
+                            <input type="text" name="zipcode" id="zipcode">
+                        </div>
+                        <div class="form-row">
+                            <label for="phonenumber">Phone Number</label>
+                            <input type="text" name="phonenumber" id="phonenumber">
+                        </div>
+                        <div class="form-btn">
+                            <button class="btn-update" type="submit">Update</button>
+                        </div>
                     </div>
                 </form>
-            </section>
+            </div>
         </div>
-    </div>
-
+    </section>
 </body>
 
 </html>
