@@ -1,0 +1,171 @@
+$yellow: #FFCC00;
+$black: #000;
+$white: #fff;
+$gray: #aaa;
+
+.team {
+  background: $white;
+  color: $black;
+  padding: 80px 0;
+  font-family: 'Raleway';
+
+  .container {
+    width: 1100px;
+    margin: 0 auto;
+  }
+
+  &__header {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  &__subtitle {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: $gray;
+  }
+
+  &__title {
+    font-size: 60px;
+    font-weight: bold;
+    color: $yellow;
+    margin: 10px 0;
+    letter-spacing: 0.1px;
+  }
+
+  &__divider {
+    width: 200px;
+    height: 1px;
+    background: $yellow;
+    margin: 35px auto;
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 10px;
+      height: 10px;
+      background: $yellow;
+      position: absolute;
+      left: 50%;
+      top: -4px;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 0;
+      height: 100%;
+      width: 1px;
+      background: $yellow;
+    }
+  }
+
+  &__image {
+    flex: 1;
+    position: relative;
+
+    img {
+      width: 400px;
+      height: 400px;
+      border: 1px solid $yellow;
+      display: block;
+      position: relative;
+      top: 31px;
+      left: 48px
+    }
+  }
+
+  &__info {
+    flex: 1;
+    text-align: center;
+  }
+
+  &__name {
+    position: relative;
+    left: 9px;
+    top: 23px;
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-family: 'Roboto';
+    color: $gray;
+  }
+
+  &__position {
+    position: relative;
+    left: 11px;
+    font-size: 24px;
+    color: $gray;
+    margin-top: 80px;
+  }
+
+  &__socials {
+    margin-bottom: 10px;
+    gap: 15px;
+  
+
+    a {
+      display: inline-block;
+      width: 35px;
+      height: 35px;
+      line-height: 35px;
+      margin-left: 5px;
+      
+      border-radius: 50%;
+      background: $white;
+      color: $black;
+      font-size: 14px;
+      text-align: center;
+      transition: 0.3s;
+
+      &:hover {
+        background: $yellow;
+      }
+    }
+  }
+
+  &__description {
+    position: relative;
+    top: 35px;
+    font-family: 'Raleway';
+    font-size: 14px;
+    line-height: 1.6;
+    color: $gray;
+    margin-bottom: 20px;
+
+  }
+
+  &__btn {
+    font-family: 'Open Sans';
+    display: inline-block;
+    padding: 2px 10px;
+    border: 2px solid $yellow;
+    color: $gray;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    margin-top: 85px;
+   
+    
+
+    &:hover {
+      background: $yellow;
+      color: $black;
+    }
+  }
+}
+
+
+
+
+
