@@ -4,41 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productly — Design Thinking</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
-    <header class="header">
-        <div class="container header-container">
+    
+    <div class="page-wrapper">
+        <header>
+          <div class="container">
             <div class="logo">
-        <img src="./image/Logo.png" alt="Productly">
+                <a href="#">
+                    <img src="./image/logo.svg" alt="Productly logo">
+                </a>
             </div>
-        <nav class="nav">
-           <ul class="nav-list">
-            <li><a class="active" href="#product">Product</a></li>
-            <li><a href="#customers">Customers</a></li>
-            <li><a href="#pricing">Pricing</a></li>
-            <li><a href="#resources">Resources</a></li>
-           </ul> 
-        </nav>
-        <div class="header-buttons">
-           <button class="btn-outline">Sign In</button>
-           <button class="btn-primary">Sign Up</button>
-        </div>
-        </div>
-    </header>
-        <section class="hero">
-            <div class="container hero-container">
-                <div class="hero-text">
-            <h1>The Design Thinking superpowers</h1>
-            <p>Tools, tutorials, design and innovation experts, all in one place!
-               The most intuitive way to imagine your next user experience.</p>
-            <button class="btn-primary">Get started</button>
+            <nav class="main-menu">
+                <ul>
+                    <li>
+                        <a href="#">Product</a>
+                    </li>
+                    <li>
+                        <a href="#">Customers</a>
+                    </li>
+                    <li>
+                        <a href="#">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="#">Resources</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="btn-wrap">
+                <button type="button" class="btn btn-outline">Sign In</button>
+                <button type="button" class="btn">Sign Up</button>
+
             </div>
-            <div class="hero-image">
-            <img src="./image/Image.png" alt="People illustration">
-            </div>
-            </div>   
-        </section>
-  </body>
+          </div>
+        </header>
+        <main>
+            <section class="thinking">
+                <div class="container">
+                    <div class="thinking-text">
+                    <h1>The Design Thinking superpowers</h1>
+                    <p>Tools, tutorials, design and innovation experts,
+                     all in one place! The most intuitive way to imagine
+                     your next user experience.</p>
+
+                     <div class="btn-wrap">
+                        <button type="button" class="btn">Get started</button>
+                    </div>
+                </div>
+
+                     <div class="people"><img src="./image/Image.svg" alt="Design thinking illustration">
+                     </div>
+                     
+                </div>
+            </section>
+
+        </main>
+        <footer>
+          <div class="container">
+
+          </div>
+        </footer>
+    </div>
+    
+</body>
 </html>

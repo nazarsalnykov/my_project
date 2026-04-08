@@ -1,117 +1,188 @@
-*{
+:root{
+    --brown-dark: #2f281e;
+    --orange: #F90;
+    --coral: #F03E3D;
+    --coral-secondary: #d80b0a;
+}
+
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    font-family: 'Montserrat', sans-serif;
-    color: #2F281E;
-}
-
-.container{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.header{
+img {
     width: 100%;
-    height: 80px;
-    background: #FFFFFF;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: top;
 }
 
-.header-container{
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.logo img{
-    width: 200px;
-    height: auto;
-}
-
-.nav-list{
-    display: flex;
+ul, ol {
     list-style: none;
-    gap: 30px;
 }
 
-.nav-list a{
-    text-decoration: none;
-    color: #2F281E;
-    font-size: 16px;
-    font-weight: 500;
-    transition: 0.3s;
+a, button {
+    transition: all .2s ease;
 }
 
-.header-buttons{
-    display: flex;
-    gap: 15px;
-}
-
-.btn-outline{
-    padding: 13px 25px;
-    border: 1px solid #BCD0E5;
-    background: transparent;
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight: 600;
-}
-
-.btn-primary{
-    padding: 13px 25px;
-    border: none;
-    background: #FF9900;
-    color: #FFFFFF;
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight: 600;
-}
-
-.hero{
-    padding: 70px 0;
-}
-
-.hero-container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-}
-
-.hero-text{
-    max-width: 520px;
-   
-}
-
-.hero-text h1{
-    font-size: 44px;
-    line-height: 54px;
-    margin-bottom: 30px;
-    font-weight: 700;
-}
-
-.hero-text p{
-    font-size: 18px;
-    line-height:28px;
-    margin-bottom: 30px;
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    line-height: 1.625rem;
     color: #544837;
 }
 
-.hero-image{
+.page-wrapper {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100vh;
+    
 }
 
-.hero-image img{
-    max-width: 642px;
+main {
+    flex-grow: 1;
+}
+
+.container {
+    width: min(90%, 1230px);
+    margin: 0 auto;
+
+}
+
+header {
+    height: 80px;
+
+    .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+}
+
+.main-menu ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    a {
+        text-decoration: none;
+        color: var(--brown-dark);
+        letter-spacing: 1px;
+        &:hover {
+            color: var(--orange);
+        }
+        &:active {
+            color: var(--coral);
+        }
+    }
+}
+
+.btn-wrap {
+    display: flex;
+    gap: 32px;
+    button.btn {
+        min-width: 110px;
+    }
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px;
+    border-radius: 4px;
+    border: none;
+    color: #fff;
+    background-color: var(--orange);
+    font-size: 1.125rem;
+    font-weight: 500;
+    font-family: inherit;
+    text-decoration: none;
+    text-align: center;
+    min-width: 180px;
+    &:hover {
+        background-color: var(--coral);
+    }
+    &:active {
+        background-color: var(--coral-secondary);
+    }
+}
+
+.btn-outline {
+        border: 1px solid var(--brown-dark);
+        background-color: #fff;
+        color: var(--brown-dark);
+        &:hover {
+           background-color: #fff;
+           border-color: var(--coral);
+           color: var(--coral);
+     }
+    &:active {
+            background-color: #fff; 
+            border-color: var(--coral-secondary);
+            color: var(--coral-secondary);
+     }
+    }
+
+    /*===Thinking===*/
+
+.thinking {
+    padding: 100px 0 120px;
+}
+
+.thinking .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+/* ЛІВА КОЛОНКА */
+.thinking-text {
+    width: 480px;
+    padding-top: 0px;
+    transform: translateY(-20px);
+}
+
+.thinking-text h1 {
+    font-weight: 700;
+    color: var(--brown-dark);
+    font-size: 44px;
+    line-height: 54px;
+    margin-bottom: 22px;
+}
+
+.thinking-text p {
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--brown-dark);
+    margin-bottom: 25px;
+    width: 500px;
+
+}
+
+/* КНОПКА */
+.thinking .btn {
+    padding: 14px 26px;
+    width: 180px;
+    transform: translateY(13px);
+}
+
+/* ПРАВА КОЛОНКА */
+.people {
+    width: 650px;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.people img {
     width: 100%;
     height: auto;
+    display: block;
+
+    transform: translate(0px, -11px);
 }
 
-.nav-list a:hover{
-    color: #FF9900;
-}
